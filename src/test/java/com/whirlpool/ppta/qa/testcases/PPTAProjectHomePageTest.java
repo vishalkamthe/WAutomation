@@ -20,19 +20,19 @@ public class PPTAProjectHomePageTest extends DriverInitialization{
 	PPTALoginPage loginPage;
 	PPTAHomePage homepage;
 	String projecthomepage1;
-	
+
 	PPTAProjectHomePage projecthomepage; 
 	Utilities testUtil;
 	Controller controller;
-	 int tdnumber;
-		
-	
+	int tdnumber;
+
+
 	public PPTAProjectHomePageTest() throws IOException {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	
-	
+
+
 	@BeforeTest
 	public void setup() throws IOException, InterruptedException
 	{
@@ -42,40 +42,40 @@ public class PPTAProjectHomePageTest extends DriverInitialization{
 		controller= new  Controller();
 		testUtil.switchtoFrame();
 		homepage=loginPage.login(prop.getProperty("username"), prop.getProperty("password")); //login method returning home page object so use homepage
-		
+
 		String String2=homepage.captureprojectnumber1();
 		projecthomepage1=String2;
 		homepage.clickOnOptionAgainstProjrctNumber(3);
-		
+
 		System.out.println("**********************************");
-		
+
 
 		System.out.println("**********************************");
 	}
-	
-	
+
+
 	@Test(priority=1)
-	public void getTitle() throws InterruptedException
+	public void getTitle() throws InterruptedException //validate title
 	{
-		
+
 		String projectpagetitle=driver.getTitle();
 		System.out.println(projectpagetitle);
-			}
-	
+	}
+
 	@Test(priority=2)
-	 public void DropDownPageTest() throws InterruptedException, IOException
-	 {
-	
+	public void DropDownPageTest() throws InterruptedException, IOException
+	{
+
 		System.out.println("**************########################********************");
 		controller.selectDropDownValues("BOMControlDialog_viewId", "EES-0002-BOM View - Master BOM");
-		 
+
 		System.out.println("****************########################******************");
-		
+
 		controller.selectDropDownValues("BOMControlDialog_viewId", "ENG-01-CAD Plan SA - MPL");
-		
-		
-	 }
 
 
-	
+	}
+
+
+
 }

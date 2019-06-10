@@ -11,7 +11,6 @@ public class Controller extends DriverInitialization
 {
 
 	
-	
 	public Controller() throws IOException {
 		super();
 		// TODO Auto-generated constructor stub
