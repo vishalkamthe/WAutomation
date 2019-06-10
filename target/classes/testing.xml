@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="AutomationFrameworkSuite">
+
+<listeners> 
+		<listener class-name="com.whirlpool.ppta.qa.extentReportListener.ExtentManager" />
+	</listeners>
+	<test name="TestBasicFunctionality">
+	
+	
+		<classes>
+			
+			<class name="com.AutomationFramework.qa.testcases.LoginPageTest" />
+			<class name="com.AutomationFramework.qa.testcases.HomePageTest" />
+			
+		</classes>
+	</test>
+</suite>

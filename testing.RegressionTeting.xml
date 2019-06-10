@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="PPTAAutomationSuite">
+<listeners>
+		<listener class-name="com.TestProject.qa.extentReportListener.ExtentManager" />
+	</listeners>
+	<test name="TestBasicFunctionality">
+	
+	
+		<classes>
+			
+			<class name="com.TestProject.qa.testcases.LoginPageTest" />
+			<class name="com.TestProject.qa.testcases.HomePageTest" />
+			
+		</classes>
+	</test>
+</suite>

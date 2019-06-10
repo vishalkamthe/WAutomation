@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" guice-stage="DEVELOPMENT" name="Failed suite [TestAutomationSuite]">
+  <listeners>
+    <listener class-name="com.TestProject.qa.extentReportListener.ExtentManager"/>
+  </listeners>
+  <test name="TestNGfEATURES(failed)">
+    <classes>
+      <class name="com.TestProject.qa.testcases.HomePageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="verifyusernameTest"/>
+        </methods>
+      </class> <!-- com.TestProject.qa.testcases.HomePageTest -->
+    </classes>
+  </test> <!-- TestNGfEATURES(failed) -->
+</suite> <!-- Failed suite [TestAutomationSuite] -->
