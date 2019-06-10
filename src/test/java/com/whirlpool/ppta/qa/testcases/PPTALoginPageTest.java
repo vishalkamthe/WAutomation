@@ -14,13 +14,13 @@ import com.whirlpool.ppta.qa.pages.PPTAHomePage;
 import com.whirlpool.ppta.qa.pages.PPTALoginPage;
 import com.whirlpool.ppta.qa.util.Utilities;
 
-public class LoginPageTest extends DriverInitialization
+public class PPTALoginPageTest extends DriverInitialization
 {
 	PPTALoginPage loginPage;
 	PPTAHomePage homepage;
 	Utilities testUtil;
 	
-	public LoginPageTest() throws IOException 
+	public PPTALoginPageTest() throws IOException 
 	{
 		super();
 		// TODO Auto-generated constructor stub

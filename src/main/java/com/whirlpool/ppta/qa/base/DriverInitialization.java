@@ -12,7 +12,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.testng.log4testng.Logger;
 
-import com.whirlpool.ppta.qa.testcases.LoginPageTest;
+import com.whirlpool.ppta.qa.testcases.PPTALoginPageTest;
 import com.whirlpool.ppta.qa.util.Utilities;
 import com.whirlpool.ppta.qa.util.WebEventListener;
 

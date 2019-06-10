@@ -6,7 +6,7 @@
       <class name="com.whirlpool.ppta.qa.testcases.ProjectHomePageTest">
         <methods>
           <include name="setup"/>
-          <include name="getTitle"/>
+          <include name="DropDownPageTest"/>
         </methods>
       </class> <!-- com.whirlpool.ppta.qa.testcases.ProjectHomePageTest -->
     </classes>

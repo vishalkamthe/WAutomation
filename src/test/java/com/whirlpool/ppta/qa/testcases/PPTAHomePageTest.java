@@ -7,21 +7,23 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import com.whirlpool.ppta.qa.base.Controller;
 import com.whirlpool.ppta.qa.base.DriverInitialization;
 import com.whirlpool.ppta.qa.pages.PPTAHomePage;
 import com.whirlpool.ppta.qa.pages.PPTALoginPage;
 import com.whirlpool.ppta.qa.pages.PPTAProjectHomePage;
 import com.whirlpool.ppta.qa.util.Utilities;
 
-public class HomePageTest extends DriverInitialization {
+public class PPTAHomePageTest extends DriverInitialization {
 
 	PPTALoginPage loginPage;
 	PPTAHomePage homepage;
 	Utilities testUtil;
 	PPTAProjectHomePage projecthomepage;
+	
 	String sheetname="HomePage"; //name in excel file
 	
-	public HomePageTest() throws IOException {
+	public PPTAHomePageTest() throws IOException {
 		super();
 		// TODO Auto-generated constructor stub
 	}
@@ -33,6 +35,7 @@ public class HomePageTest extends DriverInitialization {
 		loginPage= new PPTALoginPage();
 		homepage= new PPTAHomePage();
 		testUtil = new Utilities();
+		
 		testUtil.switchtoFrame();
 		homepage=loginPage.login(prop.getProperty("username"), prop.getProperty("password")); //login method returning home page object so use homepage
 	}
@@ -65,20 +68,20 @@ public class HomePageTest extends DriverInitialization {
 			return data;
 		}
 		
-		@Test(priority=4,dataProvider="getTestData") //data provider of this method is above method getTestData()
-		 public void selectDropDownValuesTest( String id,String value) throws InterruptedException, IOException
-		 {
-		
-			System.out.println("------------------------");
-
-			System.out.println(id);
-			System.out.println(value);
-			
-			Thread.sleep(9000);
-			//homepage.selectDropDownValues("HomeActRegCD_displayViewId", "Home Action Item - All");
-			homepage.selectDropDownValues(id,value); 
-			Thread.sleep(3000);
-		 }
+//		@Test(priority=4,dataProvider="getTestData") //data provider of this method is above method getTestData()
+//		 public void selectDropDownValuesTest( String id,String value) throws InterruptedException, IOException
+//		 {
+//		
+//			System.out.println("------------------------");
+//
+//			System.out.println(id);
+//			System.out.println(value);
+//			
+//			Thread.sleep(9000);
+//			homepage.selectDropDownValues("HomeActRegCD_displayViewId", "Home Action Item - All");
+//			homepage.selectDropDownValues(id,value); 
+//			Thread.sleep(3000);
+//		 }
 		
 		
 //		@Test(priority=4)
@@ -93,16 +96,17 @@ public class HomePageTest extends DriverInitialization {
 		
 		
 		
-		@Test(priority=6)
-		 public void navigatetoprojectPageTest() throws InterruptedException, IOException
-		 {
-			projecthomepage= homepage.clickOnOptionAgainstProjrctNumber(3);
-			 
-			 System.out.println("this is ...");
-			 
-			 
-			 
-		 }
+		
+//		@Test(priority=6)
+//		 public void navigatetoprojectPageTest() throws InterruptedException, IOException
+//		 {
+//			projecthomepage= homepage.clickOnOptionAgainstProjrctNumber(3);
+//			 
+//			 System.out.println("this is ...");
+//			 
+//			 
+//			 
+//		 }
 	@AfterMethod
 	public void tearDown()
 	{
