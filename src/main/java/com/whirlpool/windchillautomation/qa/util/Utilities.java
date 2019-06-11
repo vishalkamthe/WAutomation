@@ -8,6 +8,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.whirlpool.windchillautomation.qa.base.DriverInitialization;
 
+/**
+ * 
+ * @author shinda1
+ *
+ */
 public class Utilities extends DriverInitialization {
 
 	public Utilities() throws IOException {
