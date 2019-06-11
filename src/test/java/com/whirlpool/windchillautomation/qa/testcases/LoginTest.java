@@ -7,7 +7,7 @@ import org.testng.annotations.BeforeClass;
 
 import windchillPages.HomePage;
 
-public class LoginTest extends Base{
+public class LoginTest extends DriverInitialization{
 	HomePage homepage;
 	
 	public LoginTest() {
