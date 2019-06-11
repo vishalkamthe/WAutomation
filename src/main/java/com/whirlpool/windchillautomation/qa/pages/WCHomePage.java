@@ -35,7 +35,13 @@ public class WCHomePage extends DriverInitialization {
 	public WCHomePage() throws IOException {
 		super();
 		PageFactory.initElements(driver, this);
-		// TODO Auto-generated constructor stub
+		
+	}
+	
+	public String ValidateHomePageTitile()
+	{
+		return driver.getTitle();
+
 	}
 
 	public  WCFoldersPage navigateToWCFoldersPage() throws IOException
