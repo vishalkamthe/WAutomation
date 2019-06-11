@@ -3,6 +3,7 @@ package com.whirlpool.windchillautomation.qa.testcases;
 import java.io.IOException;
 import java.util.logging.LogManager;
 
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -65,15 +66,16 @@ public class LoginTest extends DriverInitialization{
 		PartPage.ClickFinishButton();	
 		
 		sw.SwitchToParent();
-		FolderPage.ClickOnYellowBanner();
-		
-		
-		
+		FolderPage.ClickOnYellowBanner();	
 	}
 
 	
 	
-
+	@AfterTest
+	public void exit()
+	{
+		driver.quit();
+	}
 	
 	
 	
