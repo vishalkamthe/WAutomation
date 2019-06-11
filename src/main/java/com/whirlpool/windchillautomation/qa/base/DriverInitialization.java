@@ -21,8 +21,7 @@ public class DriverInitialization {
 
 		properties=new Properties();
 
-		FileInputStream fis = new FileInputStream("C:\\Windchill_Workspace\\AutomationFramework\\src\\main\\java\\com\\whirlpool\\"
-				+ "windchillautomation\\qa\\config\\config.properties");
+		FileInputStream fis = new FileInputStream("C:\\Users\\shinda1\\eclipse-workspace\\WAutomation\\src\\main\\java\\com\\whirlpool\\windchillautomation\\qa\\config\\config.properties");
 		try {
 			properties.load(fis);
 		} catch (FileNotFoundException e) {
@@ -46,7 +45,7 @@ public class DriverInitialization {
 
 
 		if(browserName.equalsIgnoreCase("chrome")){
-
+		
 			System.setProperty("webdriver.chrome.driver", chromeDriverPath);
 			driver=new ChromeDriver();
 

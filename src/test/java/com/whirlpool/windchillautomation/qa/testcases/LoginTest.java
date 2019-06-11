@@ -1,16 +1,25 @@
 package com.whirlpool.windchillautomation.qa.testcases;
 
 import java.io.IOException;
+import java.util.logging.LogManager;
 
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 
-import windchillPages.HomePage;
+import com.whirlpool.windchillautomation.qa.base.DriverInitialization;
+import com.whirlpool.windchillautomation.qa.pages.WCFoldersPage;
+import com.whirlpool.windchillautomation.qa.pages.WCHomePage;
+import com.whirlpool.windchillautomation.qa.pages.WCNewWtPartPage;
+import com.whirlpool.windchillautomation.qa.util.Utilities;
 
 public class LoginTest extends DriverInitialization{
-	HomePage homepage;
+	WCHomePage homepage;
+	WCFoldersPage FolderPage;
+	WCNewWtPartPage PartPage;
+	Utilities sw;
 	
-	public LoginTest() {
+	
+	public LoginTest() throws IOException {
 		super();
 		System.out.println("Git push working");
 		System.out.println(" new Git push working");
@@ -20,23 +29,48 @@ public class LoginTest extends DriverInitialization{
 	}
 	
 	
-	@BeforeClass
-	public void setup() throws IOException 
+	@BeforeTest
+	public void setup() throws IOException, InterruptedException 
 	{
-		
-		InitializeDriver();
-		homepage= new HomePage();
+		driverInitialization();
+		homepage= new WCHomePage();
 		homepage.ValidateHomePageTitile();
-		homepage.NavigateProduct();
+		homepage.navigateToWCFoldersPage();
 	}
-	
-	
-	@AfterClass
-	public void tearDown()
+
+	@Test
+	public void NewPart() throws Exception
 	{
+
+		FolderPage= new WCFoldersPage();
+		FolderPage.ClickOnNewNewPartButton();
+
+		PartPage= new WCNewWtPartPage();
+		sw =new Utilities();
+		sw.SwitchToChild();
+	
+		PartPage.SelectPartType();
+		PartPage.EnterPartName();
+		PartPage.SelectPartView();
+		PartPage.PartNetWeight();
+		PartPage.PartGrossWeight();
+		PartPage.PartWeightUOM();
+		PartPage.PartVolume();
+		PartPage.PartVolumeUOM();
+		PartPage.PartMfgClassification();
+		PartPage.PartAltlangauge();
+		PartPage.PartStdCode();
+		PartPage.ClickNextButton();
+		PartPage.PartMfgDescription();
+		PartPage.ClickFinishButton();	
 		
-		driver.quit();
+		sw.SwitchToParent();
+		FolderPage.ClickOnYellowBanner();
+		
+		
+		
 	}
+
 	
 	
 

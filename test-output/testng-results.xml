@@ -1,25 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="55031" started-at="2019-06-10T07:32:08Z" finished-at="2019-06-10T07:33:03Z">
+  <suite name="Default suite" duration-ms="44545" started-at="2019-06-11T11:34:27Z" finished-at="2019-06-11T11:35:11Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="55031" started-at="2019-06-10T07:32:08Z" finished-at="2019-06-10T07:33:03Z">
-      <class name="com.whirlpool.ppta.qa.testcases.ProjectHomePageTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.whirlpool.ppta.qa.testcases.ProjectHomePageTest@150c158]" name="setup" is-config="true" duration-ms="32447" started-at="2019-06-10T13:02:08Z" finished-at="2019-06-10T13:02:41Z">
+    <test name="Default test" duration-ms="44545" started-at="2019-06-11T11:34:27Z" finished-at="2019-06-11T11:35:11Z">
+      <class name="com.whirlpool.windchillautomation.qa.testcases.LoginTest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.whirlpool.windchillautomation.qa.testcases.LoginTest@289d1c02]" name="setup" is-config="true" duration-ms="26301" started-at="2019-06-11T11:34:27Z" finished-at="2019-06-11T11:34:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="getTitle()[pri:1, instance:com.whirlpool.ppta.qa.testcases.ProjectHomePageTest@150c158]" name="getTitle" duration-ms="8" started-at="2019-06-10T13:02:41Z" finished-at="2019-06-10T13:02:41Z">
+        <test-method status="PASS" signature="NewPart()[pri:0, instance:com.whirlpool.windchillautomation.qa.testcases.LoginTest@289d1c02]" name="NewPart" duration-ms="18177" started-at="2019-06-11T11:34:53Z" finished-at="2019-06-11T11:35:11Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getTitle -->
-        <test-method status="PASS" signature="DropDownPageTest()[pri:2, instance:com.whirlpool.ppta.qa.testcases.ProjectHomePageTest@150c158]" name="DropDownPageTest" duration-ms="22555" started-at="2019-06-10T13:02:41Z" finished-at="2019-06-10T13:03:03Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DropDownPageTest -->
-      </class> <!-- com.whirlpool.ppta.qa.testcases.ProjectHomePageTest -->
+        </test-method> <!-- NewPart -->
+      </class> <!-- com.whirlpool.windchillautomation.qa.testcases.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
