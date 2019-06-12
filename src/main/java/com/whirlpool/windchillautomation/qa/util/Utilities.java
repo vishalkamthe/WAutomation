@@ -1,11 +1,16 @@
 package com.whirlpool.windchillautomation.qa.util;
 
+import java.io.File;
 import java.io.IOException;
 
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.google.common.io.Files;
 import com.whirlpool.windchillautomation.qa.base.DriverInitialization;
 
 /**
@@ -47,7 +52,23 @@ public class Utilities extends DriverInitialization {
 	    return object;
 	}	
 	
-	
+	public void capturescreenshot(WebDriver driver, String ScreenshotName) 
+	{
+		  try {
+			TakesScreenshot ts =  (TakesScreenshot)driver;
+			     
+			     File source=ts.getScreenshotAs(OutputType.FILE);
+			     
+			     Files.copy(source, new File("./ScreenShot/"+ScreenshotName+".png"));
+			     
+			     System.out.println("Screenshot Captured");
+		} catch (Exception e)
+		  {
+			System.out.println("Exception Handled while taking screenshot"+e.getMessage());		
+		  }
+
+		  
+		}
 	
 	
 	

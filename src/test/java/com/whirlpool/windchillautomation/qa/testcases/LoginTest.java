@@ -22,11 +22,6 @@ public class LoginTest extends DriverInitialization{
 
 	public LoginTest() throws IOException {
 		super();
-		System.out.println("Git push working");
-		System.out.println(" new Git push working");
-		System.out.println(" third Git push working");
-		System.out.println(" rutuja Git push working");
-
 	}
 
 
@@ -66,7 +61,9 @@ public class LoginTest extends DriverInitialization{
 		PartPage.ClickFinishButton();	
 
 		util.SwitchToParent();
-		FolderPage.ClickOnYellowBanner();	
+		FolderPage.ClickOnYellowBanner();
+		
+		util.capturescreenshot(driver, "CreatedPart");
 
 	}
 
