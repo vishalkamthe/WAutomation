@@ -55,11 +55,12 @@ public class Utilities extends DriverInitialization {
 	public void capturescreenshot(WebDriver driver, String ScreenshotName) 
 	{
 		  try {
+			  Thread.sleep(3000);
 			TakesScreenshot ts =  (TakesScreenshot)driver;
 			     
 			     File source=ts.getScreenshotAs(OutputType.FILE);
 			     
-			     Files.copy(source, new File("./ScreenShot/"+ScreenshotName+".png"));
+			     Files.copy(source, new File("./ScreenShots/"+ScreenshotName+".png"));
 			     
 			     System.out.println("Screenshot Captured");
 		} catch (Exception e)
