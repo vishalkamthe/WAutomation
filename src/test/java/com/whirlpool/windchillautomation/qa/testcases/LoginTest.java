@@ -17,19 +17,19 @@ public class LoginTest extends DriverInitialization{
 	WCHomePage homepage;
 	WCFoldersPage FolderPage;
 	WCNewWtPartPage PartPage;
-	Utilities sw;
-	
-	
+	Utilities util;
+
+
 	public LoginTest() throws IOException {
 		super();
 		System.out.println("Git push working");
 		System.out.println(" new Git push working");
 		System.out.println(" third Git push working");
 		System.out.println(" rutuja Git push working");
-		
+
 	}
-	
-	
+
+
 	@BeforeTest
 	public void setup() throws IOException, InterruptedException 
 	{
@@ -47,9 +47,9 @@ public class LoginTest extends DriverInitialization{
 		FolderPage.ClickOnNewNewPartButton();
 
 		PartPage= new WCNewWtPartPage();
-		sw =new Utilities();
-		sw.SwitchToChild();
-	
+		util =new Utilities();
+		util.SwitchToChild();
+
 		PartPage.SelectPartType();
 		PartPage.EnterPartName();
 		PartPage.SelectPartView();
@@ -64,23 +64,24 @@ public class LoginTest extends DriverInitialization{
 		PartPage.ClickNextButton();
 		PartPage.PartMfgDescription();
 		PartPage.ClickFinishButton();	
-		
-		sw.SwitchToParent();
+
+		util.SwitchToParent();
 		FolderPage.ClickOnYellowBanner();	
+
 	}
 
-	
-	
+
+
 	@AfterTest
 	public void exit()
 	{
 		driver.quit();
 	}
-	
-	
-	
-	
-	
+
+
+
+
+
 
 
 }

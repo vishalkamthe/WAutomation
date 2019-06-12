@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="44545" started-at="2019-06-11T11:34:27Z" finished-at="2019-06-11T11:35:11Z">
+  <suite name="Default suite" duration-ms="22879" started-at="2019-06-12T04:15:36Z" finished-at="2019-06-12T04:15:59Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="44545" started-at="2019-06-11T11:34:27Z" finished-at="2019-06-11T11:35:11Z">
+    <test name="Default test" duration-ms="22879" started-at="2019-06-12T04:15:36Z" finished-at="2019-06-12T04:15:59Z">
       <class name="com.whirlpool.windchillautomation.qa.testcases.LoginTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.whirlpool.windchillautomation.qa.testcases.LoginTest@289d1c02]" name="setup" is-config="true" duration-ms="26301" started-at="2019-06-11T11:34:27Z" finished-at="2019-06-11T11:34:53Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.whirlpool.windchillautomation.qa.testcases.LoginTest@4fb64261]" name="setup" is-config="true" duration-ms="9266" started-at="2019-06-12T04:15:36Z" finished-at="2019-06-12T04:15:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="NewPart()[pri:0, instance:com.whirlpool.windchillautomation.qa.testcases.LoginTest@289d1c02]" name="NewPart" duration-ms="18177" started-at="2019-06-11T11:34:53Z" finished-at="2019-06-11T11:35:11Z">
+        <test-method status="PASS" signature="NewPart()[pri:0, instance:com.whirlpool.windchillautomation.qa.testcases.LoginTest@4fb64261]" name="NewPart" duration-ms="13590" started-at="2019-06-12T04:15:45Z" finished-at="2019-06-12T04:15:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NewPart -->

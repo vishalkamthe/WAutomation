@@ -8,10 +8,11 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import com.whirlpool.windchillautomation.qa.base.DriverInitialization;
+import com.whirlpool.windchillautomation.qa.objects.WCHomePageObjects;
 
-public class WCHomePage extends DriverInitialization {
+public class WCHomePage extends WCHomePageObjects {
 
-	//Navigate to product	     	     
+	/*//Navigate to product	     	     
 	@FindBy(xpath="//div[@id='navigatorPanel-xcollapsed']")
 	WebElement navigatebutton;
 	//Browse button	     
@@ -36,8 +37,13 @@ public class WCHomePage extends DriverInitialization {
 		super();
 		PageFactory.initElements(driver, this);
 		
-	}
+	}*/
 	
+	public WCHomePage() throws IOException {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
 	public String ValidateHomePageTitile()
 	{
 		return driver.getTitle();
