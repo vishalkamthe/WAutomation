@@ -9,7 +9,11 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.whirlpool.windchillautomation.qa.base.DriverInitialization;
 import com.whirlpool.windchillautomation.qa.objects.WCHomePageObjects;
-
+/**
+ * 
+ * @author shinda1
+ *
+ */
 public class WCHomePage extends WCHomePageObjects {
 
 	/*//Navigate to product	     	     
@@ -41,7 +45,7 @@ public class WCHomePage extends WCHomePageObjects {
 	
 	public WCHomePage() throws IOException {
 		super();
-		// TODO Auto-generated constructor stub
+		
 	}
 
 	public String ValidateHomePageTitile()

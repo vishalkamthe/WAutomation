@@ -96,7 +96,7 @@ public class WCNewWtPartPage extends DriverInitialization  {
 
 
 
-	public void EnterAllPartAttibute() throws IOException
+	public void EnterAllPartAttibutes() throws IOException
 	{
 		LocalDateTime  datetime = LocalDateTime .now();
 		String partname= "Part_"+ datetime;

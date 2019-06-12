@@ -46,7 +46,7 @@ public class LoginTest extends DriverInitialization{
 		util.SwitchToChild();
 
 		PartPage.SelectAllPartDropDowns();
-		PartPage.EnterAllPartAttibute();
+		PartPage.EnterAllPartAttibutes();
 		PartPage.ClickNextButton();
 		PartPage.PartMfgDescription();
 		PartPage.ClickFinishButton();	
