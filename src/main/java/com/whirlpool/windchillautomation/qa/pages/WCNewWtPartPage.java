@@ -49,7 +49,7 @@ public class WCNewWtPartPage extends DriverInitialization  {
 
 	@FindBy(id="VolumeUoM")
 	WebElement Volumeuom;
-	
+
 	@FindBy(id="AltLang1")
 	WebElement Altlang;
 
@@ -64,94 +64,116 @@ public class WCNewWtPartPage extends DriverInitialization  {
 
 	@FindBy(xpath="//u[text()='F']")
 	WebElement FinishButton;
-	
+
 	public WCNewWtPartPage() throws Exception
 	{
 		PageFactory.initElements(driver, this);
 	}
 
-	public void SelectPartType()
+	public void SelectAllPartDropDowns()
 	{
 		String type	=reader.getCellData("WTPart", "PartType", 2);
 		Select parttype=new Select(PartType);
-		parttype.selectByVisibleText(type);		
-	}
+		parttype.selectByVisibleText(type);
 
-	public void SelectPartView()
-	{
 		String view	=reader.getCellData("WTPart", "View", 2);
 		Select partview=new Select(PartView);
 		partview.selectByVisibleText(view);
+
+		String wtuom=reader.getCellData("WTPart", "WeightUOM", 2);
+		Select weightuom=new Select(WeightUom);
+		weightuom.selectByVisibleText(wtuom);
+
+		String voluom=reader.getCellData("WTPart", "VolUOM", 2);
+		Select volumeuom=new Select(Volumeuom);
+		volumeuom.selectByVisibleText(voluom); 
+
+		String sCode=reader.getCellData("WTPart", "StandardCode", 2);
+		Select stdcode= new Select(StdCode);
+		stdcode.selectByVisibleText(sCode);
 	}
 
-	public void EnterPartName()
+
+
+
+	public void EnterAllPartAttibute() throws IOException
 	{
 		LocalDateTime  datetime = LocalDateTime .now();
 		String partname= "Part_"+ datetime;
-		PartName.sendKeys(partname);	
-	}
+		PartName.sendKeys(partname);
 
-	public void PartMfgClassification() throws InterruptedException, IOException
-	{
 		String classfication=reader.getCellData("WTPart", "Classification", 2);
 		PartClassfication.sendKeys(classfication);
 		wob = new Utilities();
 		wob.waitForElement(MfgClassification,10);
 		PartClassfication.sendKeys(Keys.ENTER);
-	}
 
-	public void PartNetWeight()
-	{
 		String netweight=reader.getCellData("WTPart", "NetWeight", 2);
 		NetWeight.sendKeys(netweight);
-	}
 
-	public void PartGrossWeight()
-	{
+
 		String grossweight=reader.getCellData("WTPart", "GrossWeight", 2);
 		GrossWeight.sendKeys(grossweight);
-	}
 
-	public void PartVolume()
-	{
 		String vol=reader.getCellData("WTPart", "Volume", 2);
 		volume.sendKeys(vol);
-	}
 
-	public void PartWeightUOM()
-	{
-		String wtuom=reader.getCellData("WTPart", "WeightUOM", 2);
-		
-		Select weightuom=new Select(WeightUom);
-		weightuom.selectByVisibleText(wtuom);
-	}
-
-	public void PartVolumeUOM()
-	{
-		String voluom=reader.getCellData("WTPart", "VolUOM", 2);
-		Select volumeuom=new Select(Volumeuom);
-		volumeuom.selectByVisibleText(voluom); 
-	}
-
-	public void PartAltlangauge()
-	{
 		String altlang=reader.getCellData("WTPart", "Alt_lang", 2);
-		Altlang.sendKeys(altlang);
+		Altlang.sendKeys(altlang);			
 	}
 
-	public void PartMfgDescription()
-	{
+	public void PartMfgDescription() {
+
 		String MFGAttribute=reader.getCellData("WTPart", "MfgClassAttribute", 2);
 		MfgDescription.sendKeys(MFGAttribute);
+
 	}
 
-	public void PartStdCode()
-	{
-		String sCode=reader.getCellData("WTPart", "StandardCode", 2);
-		Select stdcode= new Select(StdCode);
-		stdcode.selectByVisibleText(sCode);
-		
-	}
+	/*
+	 * public void SelectPartType() {
+	 * 
+	 * }
+	 * 
+	 * public void SelectPartView() {
+	 * 
+	 * }
+	 * 
+	 * public void EnterPartName() {
+	 * 
+	 * }
+	 * 
+	 * public void PartMfgClassification() throws InterruptedException, IOException
+	 * {
+	 * 
+	 * }
+	 * 
+	 * public void PartNetWeight() {
+	 * 
+	 * }
+	 * 
+	 * public void PartGrossWeight() { }
+	 * 
+	 * public void PartVolume() {
+	 * 
+	 * }
+	 * 
+	 * public void PartWeightUOM() {
+	 * 
+	 * }
+	 * 
+	 * public void PartVolumeUOM() {
+	 * 
+	 * }
+	 * 
+	 * public void PartAltlangauge() {
+	 * 
+	 * }
+	 * 
+	 * public void PartStdCode() {
+	 * 
+	 * 
+	 * }
+	 */
 
 	public void ClickNextButton()
 	{
@@ -164,5 +186,5 @@ public class WCNewWtPartPage extends DriverInitialization  {
 		return new WCFoldersPage();
 	}
 
-	
+
 }

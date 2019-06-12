@@ -18,7 +18,7 @@ public class DriverInitialization {
 	public static Properties properties;
 
 	public DriverInitialization() throws IOException{
-
+//C:\\Users\\shinda1\\git\\WAutomation\\src\\main\\java\\com\\whirlpool\\windchillautomation\\qa\\config\\config.properties
 		properties=new Properties();
 
 		FileInputStream fis = new FileInputStream("C:\\Users\\shinda1\\git\\WAutomation\\src\\main\\java\\com\\whirlpool\\windchillautomation\\qa\\config\\config.properties");

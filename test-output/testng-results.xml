@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="51364" started-at="2019-06-12T06:28:58Z" finished-at="2019-06-12T06:29:49Z">
+  <suite name="Default suite" duration-ms="58277" started-at="2019-06-12T09:19:52Z" finished-at="2019-06-12T09:20:50Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="51364" started-at="2019-06-12T06:28:58Z" finished-at="2019-06-12T06:29:49Z">
+    <test name="Default test" duration-ms="58277" started-at="2019-06-12T09:19:52Z" finished-at="2019-06-12T09:20:50Z">
       <class name="com.whirlpool.windchillautomation.qa.testcases.LoginTest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.whirlpool.windchillautomation.qa.testcases.LoginTest@22eeefeb]" name="setup" is-config="true" duration-ms="15395" started-at="2019-06-12T06:28:58Z" finished-at="2019-06-12T06:29:13Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.whirlpool.windchillautomation.qa.testcases.LoginTest@22eeefeb]" name="setup" is-config="true" duration-ms="16535" started-at="2019-06-12T09:19:52Z" finished-at="2019-06-12T09:20:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="NewPart()[pri:0, instance:com.whirlpool.windchillautomation.qa.testcases.LoginTest@22eeefeb]" name="NewPart" duration-ms="35128" started-at="2019-06-12T06:29:13Z" finished-at="2019-06-12T06:29:48Z">
+        <test-method status="PASS" signature="NewPart()[pri:0, instance:com.whirlpool.windchillautomation.qa.testcases.LoginTest@22eeefeb]" name="NewPart" duration-ms="40867" started-at="2019-06-12T09:20:09Z" finished-at="2019-06-12T09:20:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- NewPart -->
-        <test-method status="PASS" signature="exit()[pri:0, instance:com.whirlpool.windchillautomation.qa.testcases.LoginTest@22eeefeb]" name="exit" is-config="true" duration-ms="800" started-at="2019-06-12T06:29:48Z" finished-at="2019-06-12T06:29:49Z">
+        <test-method status="PASS" signature="exit()[pri:0, instance:com.whirlpool.windchillautomation.qa.testcases.LoginTest@22eeefeb]" name="exit" is-config="true" duration-ms="826" started-at="2019-06-12T09:20:49Z" finished-at="2019-06-12T09:20:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- exit -->
