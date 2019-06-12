@@ -58,8 +58,6 @@ public class LoginTest extends DriverInitialization{
 
 	}
 
-
-
 	@AfterTest
 	public void exit()
 	{
