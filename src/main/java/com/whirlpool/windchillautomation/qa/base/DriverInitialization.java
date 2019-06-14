@@ -13,15 +13,15 @@ import com.whirlpool.windchillautomation.qa.util.Utilities;
 
 public class DriverInitialization {
 
-
 	public static WebDriver driver;
 	public static Properties properties;
 
 	public DriverInitialization() throws IOException{
-//C:\\Users\\shinda1\\git\\WAutomation\\src\\main\\java\\com\\whirlpool\\windchillautomation\\qa\\config\\config.properties
+		//C:\\Users\\shinda1\\git\\WAutomation\\src\\main\\java\\com\\whirlpool\\windchillautomation\\qa\\config\\config.properties
+		//C:\\Git_Workspaces\\WAutomation\\src\\main\\java\\com\\whirlpool\\windchillautomation\\qa\\config
 		properties=new Properties();
 
-		FileInputStream fis = new FileInputStream("C:\\Users\\shinda1\\git\\WAutomation\\src\\main\\java\\com\\whirlpool\\windchillautomation\\qa\\config\\config.properties");
+		FileInputStream fis = new FileInputStream("E:\\config.properties");
 		try {
 			properties.load(fis);
 		} catch (FileNotFoundException e) {
@@ -45,7 +45,7 @@ public class DriverInitialization {
 
 
 		if(browserName.equalsIgnoreCase("chrome")){
-		
+
 			System.setProperty("webdriver.chrome.driver", chromeDriverPath);
 			driver=new ChromeDriver();
 
@@ -66,7 +66,7 @@ public class DriverInitialization {
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(Utilities.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(Utilities.IMPLICIT_WAIT, TimeUnit.SECONDS);
-		
+
 		driver.get(url);
 		System.out.println(url);
 

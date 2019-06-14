@@ -12,8 +12,7 @@
 		<classes>
 			
 			<class name="com.AutomationFramework.qa.testcases.LoginPageTest" />
-			<class name="com.AutomationFramework.qa.testcases.HomePageTest" />
-			
+						
 		</classes>
 	</test>
 </suite>

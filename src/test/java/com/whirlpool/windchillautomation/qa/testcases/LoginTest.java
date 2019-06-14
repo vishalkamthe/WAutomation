@@ -13,21 +13,23 @@ import com.whirlpool.windchillautomation.qa.pages.WCHomePage;
 import com.whirlpool.windchillautomation.qa.pages.WCNewWtPartPage;
 import com.whirlpool.windchillautomation.qa.util.Utilities;
 
+/**
+ * 
+ * @author kamthvs
+ *
+ */
 public class LoginTest extends DriverInitialization{
 	WCHomePage homepage;
 	WCFoldersPage FolderPage;
 	WCNewWtPartPage PartPage;
 	Utilities util;
 
-
-	public LoginTest() throws IOException {
+	public LoginTest() throws IOException{
 		super();
 	}
 
-
 	@BeforeTest
-	public void setup() throws IOException, InterruptedException 
-	{
+	public void setup() throws IOException, InterruptedException{
 		driverInitialization();
 		homepage= new WCHomePage();
 		homepage.ValidateHomePageTitile();
@@ -35,40 +37,16 @@ public class LoginTest extends DriverInitialization{
 	}
 
 	@Test
-	public void NewPart() throws Exception
-	{
-
-		FolderPage= new WCFoldersPage();
-		FolderPage.ClickOnNewNewPartButton();
+	public void NewPart1() throws Exception{
 
 		PartPage= new WCNewWtPartPage();
-		util =new Utilities();
-		util.SwitchToChild();
-
-		PartPage.SelectAllPartDropDowns();
-		PartPage.EnterAllPartAttibutes();
-		PartPage.ClickNextButton();
-		PartPage.PartMfgDescription();
-		PartPage.ClickFinishButton();	
-
-		util.SwitchToParent();
-		FolderPage.ClickOnYellowBanner();
-		
-		util.capturescreenshot(driver, "CreatedPart");
-
+		PartPage.createNewPart();
 	}
 
-	@AfterTest
-	public void exit()
-	{
+	@AfterTest 
+	public void exit(){
 		driver.quit();
 	}
-
-
-
-
-
-
 
 }
 

@@ -16,36 +16,10 @@ import com.whirlpool.windchillautomation.qa.objects.WCHomePageObjects;
  */
 public class WCHomePage extends WCHomePageObjects {
 
-	/*//Navigate to product	     	     
-	@FindBy(xpath="//div[@id='navigatorPanel-xcollapsed']")
-	WebElement navigatebutton;
-	//Browse button	     
-	@FindBy(xpath="//li[@id='navigatorTabPanel__object_main_navigation']")
-	WebElement browsebutton;
-
-	//navigate to recent product button	     
-	@FindBy(xpath="//span[@class='x-tab-strip-text productNavigation-icon']")
-	WebElement productbutton;
-
-	@FindBy(linkText="View All")
-	WebElement viewall;
-
-	//Navigate to small appliance product 
-	@FindBy(xpath="//input[@id='netmarkets.product.list.searchInListTextBox']")
-	WebElement searchboxproduct;
-
-	@FindBy(linkText="Small Appliances")
-	WebElement smallappliance;
 
 	public WCHomePage() throws IOException {
 		super();
-		PageFactory.initElements(driver, this);
-		
-	}*/
-	
-	public WCHomePage() throws IOException {
-		super();
-		
+
 	}
 
 	public String ValidateHomePageTitile()
@@ -57,13 +31,13 @@ public class WCHomePage extends WCHomePageObjects {
 	public  WCFoldersPage navigateToWCFoldersPage() throws IOException
 	{
 		System.out.println("test");
-		navigatebutton.click();
-		browsebutton.click();
-		productbutton.click();
-		viewall.click();
-		searchboxproduct.sendKeys("Small Appliances");
-		searchboxproduct.sendKeys(Keys.ENTER);
-		smallappliance.click();
+		navigateButton.click();
+		browseButton.click();
+		productButton.click();
+		viewAll.click();
+		searchBoxProduct.sendKeys("Small Appliances");
+		searchBoxProduct.sendKeys(Keys.ENTER);
+		smallAppliance.click();
 
 		return new WCFoldersPage();
 

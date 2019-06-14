@@ -1,38 +1,22 @@
 package com.whirlpool.windchillautomation.qa.pages;
 
 import java.io.IOException;
+import com.whirlpool.windchillautomation.qa.objects.WCFoldersPageObjects;
 
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
-
-import com.whirlpool.windchillautomation.qa.base.DriverInitialization;
-import com.whirlpool.windchillautomation.qa.util.Utilities;
-
-public class WCFoldersPage extends DriverInitialization {
+public class WCFoldersPage extends WCFoldersPageObjects {
 
 	public WCFoldersPage() throws IOException {
 		super();
-		PageFactory.initElements(driver, this);
+		// TODO Auto-generated constructor stub
 	}
 
-	public static  Utilities sw;
-
-	@FindBy(xpath="//button[text()='New Part']")
-	WebElement newpart;
-
-	@FindBy(xpath="//a[@class='msgIdentityText']")
-	WebElement YellowBannerLink;
-	
-	public WCNewWtPartPage ClickOnNewNewPartButton() throws Exception
-	{
-		newpart.click();
+	public  WCNewWtPartPage ClickOnNewNewPartButton() throws Exception{
+		newPart.click();
 		return new WCNewWtPartPage();
 	}
-	
-	public void ClickOnYellowBanner()
-	{
-		YellowBannerLink.click();
+
+	public void ClickOnYellowBanner(){
+		yellowBannerLink.click();
 	}
-	
+
 }

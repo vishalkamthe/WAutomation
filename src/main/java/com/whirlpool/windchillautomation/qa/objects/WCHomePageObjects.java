@@ -18,23 +18,23 @@ public class WCHomePageObjects extends DriverInitialization {
 
 	//Navigate to product	     	     
 		@FindBy(xpath="//div[@id='navigatorPanel-xcollapsed']")
-		protected WebElement navigatebutton;
+		protected WebElement navigateButton;
 		//Browse button	     
 		@FindBy(xpath="//li[@id='navigatorTabPanel__object_main_navigation']")
-		protected WebElement browsebutton;
+		protected WebElement browseButton;
 
 		//navigate to recent product button	     
 		@FindBy(xpath="//span[@class='x-tab-strip-text productNavigation-icon']")
-		protected WebElement productbutton;
+		protected WebElement productButton;
 
 		@FindBy(linkText="View All")
-		protected WebElement viewall;
+		protected WebElement viewAll;
 
 		//Navigate to small appliance product 
 		@FindBy(xpath="//input[@id='netmarkets.product.list.searchInListTextBox']")
-		protected WebElement searchboxproduct;
+		protected WebElement searchBoxProduct;
 
 		@FindBy(linkText="Small Appliances")
-		protected WebElement smallappliance;
+		protected WebElement smallAppliance;
 
 }
