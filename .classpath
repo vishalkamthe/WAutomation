@@ -1,33 +1,212 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" output="target/classes" path="src/main/java">
+	<classpathentry kind="src" path="src/main/java">
 		<attributes>
 			<attribute name="optional" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
+	<classpathentry excluding="**" kind="src" path="src/main/resources">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
+	<classpathentry kind="src" path="src/test/java">
 		<attributes>
 			<attribute name="optional" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.5">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="srclib/animal-sniffer-annotations-1.14.jar"/>
+	<classpathentry kind="lib" path="srclib/ant-1.10.3.jar"/>
+	<classpathentry kind="lib" path="srclib/ant-1.8.2.jar"/>
+	<classpathentry kind="lib" path="srclib/ant-launcher-1.10.3.jar"/>
+	<classpathentry kind="lib" path="srclib/ant-launcher-1.8.2.jar"/>
+	<classpathentry kind="lib" path="srclib/asm-6.2.1.jar"/>
+	<classpathentry kind="lib" path="srclib/aspectjweaver-1.9.1.jar"/>
+	<classpathentry kind="lib" path="srclib/avalon-framework-4.1.3.jar"/>
+	<classpathentry kind="lib" path="srclib/bsh-2.0b4.jar"/>
+	<classpathentry kind="lib" path="srclib/bsh-2.0b6.jar"/>
+	<classpathentry kind="lib" path="srclib/bson-3.0.4.jar"/>
+	<classpathentry kind="lib" path="srclib/byte-buddy-1.8.15.jar"/>
+	<classpathentry kind="lib" path="srclib/cglib-3.2.8.jar"/>
+	<classpathentry kind="lib" path="srclib/checker-compat-qual-2.0.0.jar"/>
+	<classpathentry kind="lib" path="srclib/classworlds-1.1.jar"/>
+	<classpathentry kind="lib" path="srclib/commons-beanutils-1.9.2.jar"/>
+	<classpathentry kind="lib" path="srclib/commons-cli-1.0.jar"/>
+	<classpathentry kind="lib" path="srclib/commons-codec-1.10.jar"/>
+	<classpathentry kind="lib" path="srclib/commons-codec-1.12.jar"/>
+	<classpathentry kind="lib" path="srclib/commons-codec-1.5.jar"/>
+	<classpathentry kind="lib" path="srclib/commons-collections-3.2.2.jar"/>
+	<classpathentry kind="lib" path="srclib/commons-collections4-4.1.jar"/>
+	<classpathentry kind="lib" path="srclib/commons-collections4-4.3.jar"/>
+	<classpathentry kind="lib" path="srclib/commons-compress-1.18.jar"/>
+	<classpathentry kind="lib" path="srclib/commons-digester-1.8.1.jar"/>
+	<classpathentry kind="lib" path="srclib/commons-exec-1.3.jar"/>
+	<classpathentry kind="lib" path="srclib/commons-io-2.6.jar"/>
+	<classpathentry kind="lib" path="srclib/commons-lang3-3.8.jar"/>
+	<classpathentry kind="lib" path="srclib/commons-logging-1.1.jar"/>
+	<classpathentry kind="lib" path="srclib/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="srclib/commons-logging-api-1.1.jar"/>
+	<classpathentry kind="lib" path="srclib/commons-math3-3.6.1.jar"/>
+	<classpathentry kind="lib" path="srclib/commons-validator-1.6.jar"/>
+	<classpathentry kind="lib" path="srclib/cssparser-0.9.16.jar"/>
+	<classpathentry kind="lib" path="srclib/curvesapi-1.06.jar"/>
+	<classpathentry kind="lib" path="srclib/dom4j-1.6.1.jar"/>
+	<classpathentry kind="lib" path="srclib/doxia-sink-api-1.0-alpha-7.jar"/>
+	<classpathentry kind="lib" path="srclib/error_prone_annotations-2.1.3.jar"/>
+	<classpathentry kind="lib" path="srclib/extentreports-2.41.2.jar"/>
+	<classpathentry kind="lib" path="srclib/freemarker-2.3.23.jar"/>
+	<classpathentry kind="lib" path="srclib/google-collections-1.0.jar"/>
+	<classpathentry kind="lib" path="srclib/gson-2.8.5.jar"/>
+	<classpathentry kind="lib" path="srclib/hamcrest-core-1.1.jar"/>
+	<classpathentry kind="lib" path="srclib/htmlunit-2.17.jar"/>
+	<classpathentry kind="lib" path="srclib/htmlunit-core-js-2.17.jar"/>
+	<classpathentry kind="lib" path="srclib/httpclient-4.5.6.jar"/>
+	<classpathentry kind="lib" path="srclib/httpcore-4.4.10.jar"/>
+	<classpathentry kind="lib" path="srclib/httpmime-4.4.1.jar"/>
+	<classpathentry kind="lib" path="srclib/j2objc-annotations-1.1.jar"/>
+	<classpathentry kind="lib" path="srclib/java-client-7.0.0-sources.jar"/>
+	<classpathentry kind="lib" path="srclib/java-client-7.0.0.jar"/>
+	<classpathentry kind="lib" path="srclib/javax.servlet-api-3.1.0.jar"/>
+	<classpathentry kind="lib" path="srclib/jcip-annotations-1.0.jar"/>
+	<classpathentry kind="lib" path="srclib/jcommander-1.27.jar"/>
+	<classpathentry kind="lib" path="srclib/jcommander-1.72.jar"/>
+	<classpathentry kind="lib" path="srclib/jetty-io-9.2.11.v20150529.jar"/>
+	<classpathentry kind="lib" path="srclib/jetty-repacked-9.4.12.v20180830.jar"/>
+	<classpathentry kind="lib" path="srclib/jetty-util-9.2.11.v20150529.jar"/>
+	<classpathentry kind="lib" path="srclib/jsoup-1.8.3.jar"/>
+	<classpathentry kind="lib" path="srclib/jsr305-1.3.9.jar"/>
+	<classpathentry kind="lib" path="srclib/jsr305-2.0.1.jar"/>
+	<classpathentry kind="lib" path="srclib/junit-3.8.1.jar"/>
+	<classpathentry kind="lib" path="srclib/junit-3.8.2.jar"/>
+	<classpathentry kind="lib" path="srclib/junit-4.10.jar"/>
+	<classpathentry kind="lib" path="srclib/log4j-1.2.12.jar"/>
+	<classpathentry kind="lib" path="srclib/log4j-1.2.13.jar"/>
+	<classpathentry kind="lib" path="srclib/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="srclib/logkit-1.0.1.jar"/>
+	<classpathentry kind="lib" path="srclib/maven-artifact-2.0.6.jar"/>
+	<classpathentry kind="lib" path="srclib/maven-artifact-2.0.9.jar"/>
+	<classpathentry kind="lib" path="srclib/maven-artifact-manager-2.0.6.jar"/>
+	<classpathentry kind="lib" path="srclib/maven-artifact-manager-2.0.9.jar"/>
+	<classpathentry kind="lib" path="srclib/maven-clean-plugin-2.5.jar"/>
+	<classpathentry kind="lib" path="srclib/maven-compiler-plugin-3.1.jar"/>
+	<classpathentry kind="lib" path="srclib/maven-core-2.0.6.jar"/>
+	<classpathentry kind="lib" path="srclib/maven-core-2.0.9.jar"/>
+	<classpathentry kind="lib" path="srclib/maven-deploy-plugin-2.7.jar"/>
+	<classpathentry kind="lib" path="srclib/maven-error-diagnostics-2.0.6.jar"/>
+	<classpathentry kind="lib" path="srclib/maven-error-diagnostics-2.0.9.jar"/>
+	<classpathentry kind="lib" path="srclib/maven-filtering-1.1.jar"/>
+	<classpathentry kind="lib" path="srclib/maven-install-plugin-2.4.jar"/>
+	<classpathentry kind="lib" path="srclib/maven-jar-plugin-2.4.jar"/>
+	<classpathentry kind="lib" path="srclib/maven-model-2.0.6.jar"/>
+	<classpathentry kind="lib" path="srclib/maven-model-2.0.9.jar"/>
+	<classpathentry kind="lib" path="srclib/maven-monitor-2.0.6.jar"/>
+	<classpathentry kind="lib" path="srclib/maven-monitor-2.0.9.jar"/>
+	<classpathentry kind="lib" path="srclib/maven-plugin-api-2.0.6.jar"/>
+	<classpathentry kind="lib" path="srclib/maven-plugin-api-2.0.9.jar"/>
+	<classpathentry kind="lib" path="srclib/maven-plugin-descriptor-2.0.6.jar"/>
+	<classpathentry kind="lib" path="srclib/maven-plugin-descriptor-2.0.9.jar"/>
+	<classpathentry kind="lib" path="srclib/maven-plugin-parameter-documenter-2.0.6.jar"/>
+	<classpathentry kind="lib" path="srclib/maven-plugin-parameter-documenter-2.0.9.jar"/>
+	<classpathentry kind="lib" path="srclib/maven-plugin-registry-2.0.6.jar"/>
+	<classpathentry kind="lib" path="srclib/maven-plugin-registry-2.0.9.jar"/>
+	<classpathentry kind="lib" path="srclib/maven-profile-2.0.6.jar"/>
+	<classpathentry kind="lib" path="srclib/maven-profile-2.0.9.jar"/>
+	<classpathentry kind="lib" path="srclib/maven-project-2.0.6.jar"/>
+	<classpathentry kind="lib" path="srclib/maven-project-2.0.9.jar"/>
+	<classpathentry kind="lib" path="srclib/maven-reporting-api-2.0.6.jar"/>
+	<classpathentry kind="lib" path="srclib/maven-repository-metadata-2.0.6.jar"/>
+	<classpathentry kind="lib" path="srclib/maven-repository-metadata-2.0.9.jar"/>
+	<classpathentry kind="lib" path="srclib/maven-resources-plugin-2.6.jar"/>
+	<classpathentry kind="lib" path="srclib/maven-settings-2.0.6.jar"/>
+	<classpathentry kind="lib" path="srclib/maven-settings-2.0.9.jar"/>
+	<classpathentry kind="lib" path="srclib/maven-shared-incremental-1.1.jar"/>
+	<classpathentry kind="lib" path="srclib/maven-shared-utils-0.1.jar"/>
+	<classpathentry kind="lib" path="srclib/maven-site-plugin-3.3.jar"/>
+	<classpathentry kind="lib" path="srclib/maven-surefire-plugin-2.12.4.jar"/>
+	<classpathentry kind="lib" path="srclib/maven-toolchain-1.0.jar"/>
+	<classpathentry kind="lib" path="srclib/mongodb-driver-3.0.4.jar"/>
+	<classpathentry kind="lib" path="srclib/mongodb-driver-core-3.0.4.jar"/>
+	<classpathentry kind="lib" path="srclib/nekohtml-1.9.22.jar"/>
+	<classpathentry kind="lib" path="srclib/netty-3.5.2.Final.jar"/>
+	<classpathentry kind="lib" path="srclib/okhttp-3.11.0.jar"/>
+	<classpathentry kind="lib" path="srclib/okio-1.14.0.jar"/>
+	<classpathentry kind="lib" path="srclib/ooxml-schemas-1.1.jar"/>
+	<classpathentry kind="lib" path="srclib/ooxml-schemas-1.4.jar"/>
+	<classpathentry kind="lib" path="srclib/openxml4j-1.0-beta.jar"/>
+	<classpathentry kind="lib" path="srclib/plexus-build-api-0.0.4.jar"/>
+	<classpathentry kind="lib" path="srclib/plexus-classworlds-2.2.2.jar"/>
+	<classpathentry kind="lib" path="srclib/plexus-compiler-api-2.2.jar"/>
+	<classpathentry kind="lib" path="srclib/plexus-compiler-javac-2.2.jar"/>
+	<classpathentry kind="lib" path="srclib/plexus-compiler-manager-2.2.jar"/>
+	<classpathentry kind="lib" path="srclib/plexus-component-annotations-1.5.5.jar"/>
+	<classpathentry kind="lib" path="srclib/plexus-container-default-1.0-alpha-9-stable-1.jar"/>
+	<classpathentry kind="lib" path="srclib/plexus-container-default-1.5.5.jar"/>
+	<classpathentry kind="lib" path="srclib/plexus-interactivity-api-1.0-alpha-4.jar"/>
+	<classpathentry kind="lib" path="srclib/plexus-interpolation-1.13.jar"/>
+	<classpathentry kind="lib" path="srclib/plexus-utils-1.5.1.jar"/>
+	<classpathentry kind="lib" path="srclib/plexus-utils-2.0.5.jar"/>
+	<classpathentry kind="lib" path="srclib/plexus-utils-3.0.jar"/>
+	<classpathentry kind="lib" path="srclib/poi-contrib-3.6.jar"/>
+	<classpathentry kind="lib" path="srclib/sac-1.3.jar"/>
+	<classpathentry kind="lib" path="srclib/selenium-api-3.141.59.jar"/>
+	<classpathentry kind="lib" path="srclib/selenium-chrome-driver-3.141.59.jar"/>
+	<classpathentry kind="lib" path="srclib/selenium-edge-driver-3.141.59.jar"/>
+	<classpathentry kind="lib" path="srclib/selenium-firefox-driver-3.141.59.jar"/>
+	<classpathentry kind="lib" path="srclib/selenium-htmlunit-driver-2.46.0.jar"/>
+	<classpathentry kind="lib" path="srclib/selenium-ie-driver-3.141.59.jar"/>
+	<classpathentry kind="lib" path="srclib/selenium-java-2.46.0.jar"/>
+	<classpathentry kind="lib" path="srclib/selenium-java-3.141.59.jar"/>
+	<classpathentry kind="lib" path="srclib/selenium-leg-rc-2.46.0.jar"/>
+	<classpathentry kind="lib" path="srclib/selenium-opera-driver-3.141.59.jar"/>
+	<classpathentry kind="lib" path="srclib/selenium-remote-driver-3.141.59-sources.jar"/>
+	<classpathentry kind="lib" path="srclib/selenium-remote-driver-3.141.59.jar"/>
+	<classpathentry kind="lib" path="srclib/selenium-safari-driver-3.141.59.jar"/>
+	<classpathentry kind="lib" path="srclib/selenium-server-3.141.59.jar"/>
+	<classpathentry kind="lib" path="srclib/selenium-support-3.141.59.jar"/>
+	<classpathentry kind="lib" path="srclib/serializer-2.7.2.jar"/>
+	<classpathentry kind="lib" path="srclib/servlet-api-2.3.jar"/>
+	<classpathentry kind="lib" path="srclib/slf4j-api-1.7.25.jar"/>
+	<classpathentry kind="lib" path="srclib/snakeyaml-1.19.jar"/>
+	<classpathentry kind="lib" path="srclib/snakeyaml-1.6.jar"/>
+	<classpathentry kind="lib" path="srclib/spring-aop-5.1.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="srclib/spring-beans-5.1.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="srclib/spring-context-5.1.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="srclib/spring-core-5.1.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="srclib/spring-expression-5.1.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="srclib/spring-jcl-5.1.0.RELEASE.jar"/>
+	<classpathentry kind="lib" path="srclib/sqlite-jdbc-3.8.11.1.jar"/>
+	<classpathentry kind="lib" path="srclib/stax-api-1.0.1.jar"/>
+	<classpathentry kind="lib" path="srclib/testng-6.1.1.jar"/>
+	<classpathentry kind="lib" path="srclib/testng-6.14.3.jar"/>
+	<classpathentry kind="lib" path="srclib/testng-6.8.jar"/>
+	<classpathentry kind="lib" path="srclib/webbit-0.4.14.jar"/>
+	<classpathentry kind="lib" path="srclib/websocket-api-9.2.11.v20150529.jar"/>
+	<classpathentry kind="lib" path="srclib/websocket-client-9.2.11.v20150529.jar"/>
+	<classpathentry kind="lib" path="srclib/websocket-common-9.2.11.v20150529.jar"/>
+	<classpathentry kind="lib" path="srclib/xalan-2.7.2.jar"/>
+	<classpathentry kind="lib" path="srclib/xbean-reflect-3.4.jar"/>
+	<classpathentry kind="lib" path="srclib/xercesImpl-2.11.0.jar"/>
+	<classpathentry kind="lib" path="srclib/xml-apis-1.0.b2.jar"/>
+	<classpathentry kind="lib" path="srclib/xmlbeans-2.3.0.jar"/>
+	<classpathentry kind="lib" path="srclib/xmlbeans-3.1.0.jar"/>
+	<classpathentry kind="lib" path="srclib/charsets.jar"/>
+	<classpathentry kind="lib" path="srclib/deploy.jar"/>
+	<classpathentry kind="lib" path="srclib/javaws.jar"/>
+	<classpathentry kind="lib" path="srclib/jce.jar"/>
+	<classpathentry kind="lib" path="srclib/jfr.jar"/>
+	<classpathentry kind="lib" path="srclib/jfxswt.jar"/>
+	<classpathentry kind="lib" path="srclib/jsse.jar"/>
+	<classpathentry kind="lib" path="srclib/management-agent.jar"/>
+	<classpathentry kind="lib" path="srclib/plugin.jar"/>
+	<classpathentry kind="lib" path="srclib/resources.jar"/>
+	<classpathentry kind="lib" path="srclib/rt.jar"/>
+	<classpathentry kind="lib" path="srclib/poi-3.9.jar"/>
+	<classpathentry kind="lib" path="srclib/poi-ooxml-3.9.jar"/>
+	<classpathentry kind="lib" path="srclib/poi-ooxml-schemas-3.9.jar"/>
+	<classpathentry kind="lib" path="srclib/poi-scratchpad-3.9.jar"/>
+	<classpathentry kind="lib" path="srclib/google-collect-0.5.jar"/>
+	<classpathentry kind="lib" path="C:/Users/kamthvs/Downloads/guava-21.0.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

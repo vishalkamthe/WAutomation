@@ -14,6 +14,7 @@ public class WCFoldersPageObjects extends DriverInitialization {
 	@FindBy(xpath="//a[@class='msgIdentityText']")
 	protected WebElement yellowBannerLink;
 	
+	
 	public WCFoldersPageObjects() throws IOException {
 		super();
 		PageFactory.initElements(driver, this);

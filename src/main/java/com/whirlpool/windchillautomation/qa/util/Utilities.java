@@ -2,6 +2,7 @@ package com.whirlpool.windchillautomation.qa.util;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.function.Function;
 
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -45,12 +46,12 @@ public class Utilities extends DriverInitialization {
 			driver.switchTo().window(ParentWindow);
 		}
 	
-	public WebElement waitForElement(WebElement object, long wait_Time_Seconds) 
+	/*public WebElement waitForElement(WebElement object, long wait_Time_Seconds) 
 	{
 	    WebDriverWait wait = new WebDriverWait(driver,wait_Time_Seconds);
 	    wait.until(ExpectedConditions.elementToBeClickable(object));
 	    return object;
-	}	
+	}	*/
 	
 	public void capturescreenshot(WebDriver driver, String ScreenshotName) 
 	{

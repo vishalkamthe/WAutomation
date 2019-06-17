@@ -14,20 +14,22 @@ import com.whirlpool.windchillautomation.qa.util.Xls_Reader;
  *
  */
 public class WCNewWtPartPage extends WCNewWtPartPageObjects{
-	
+
 	String testDataFilePath =properties.getProperty("testdatafilepath");
 	Xls_Reader reader = new Xls_Reader(testDataFilePath);
 	Utilities wob;
 	WCFoldersPage FolderPage;
 	Utilities util;
 	WCNewWtPartPage PartPage;
-	
+	String partname ;
+
 	public WCNewWtPartPage() throws Exception {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public WCNewWtPartPage selectAllPartDropDowns(){
+	public WCNewWtPartPage populateAllWTPartAttribute() throws IOException, InterruptedException{
+
 		String type	=reader.getCellData("WTPart", "PartType", 2);
 		Select parttype=new Select(partType);
 		parttype.selectByVisibleText(type);
@@ -47,19 +49,16 @@ public class WCNewWtPartPage extends WCNewWtPartPageObjects{
 		String sCode=reader.getCellData("WTPart", "StandardCode", 2);
 		Select stdcode= new Select(stdCode);
 		stdcode.selectByVisibleText(sCode);
-		
-		return this;
-	}
 
-	public void enterAllPartAttibutes() throws IOException{
 		LocalDateTime  datetime = LocalDateTime .now();
-		String partname= "Part_"+ datetime;
+		partname= "Part_"+ datetime;
 		partName.sendKeys(partname);
 
 		String classfication=reader.getCellData("WTPart", "Classification", 2);
 		partClassfication.sendKeys(classfication);
 		wob = new Utilities();
-		wob.waitForElement(mfgClassification,10);
+		Thread.sleep(3000);
+		//wob.waitForElement(mfgClassification,10);
 		partClassfication.sendKeys(Keys.ENTER);
 
 		String netweight=reader.getCellData("WTPart", "NetWeight", 2);
@@ -72,17 +71,23 @@ public class WCNewWtPartPage extends WCNewWtPartPageObjects{
 		volume.sendKeys(vol);
 
 		String altlang=reader.getCellData("WTPart", "Alt_lang", 2);
-		altLang.sendKeys(altlang);			
+		altLang.sendKeys(altlang);
+
+		return this;
 	}
 
-	public void partMfgDescription(){
-		
+
+	public WCNewWtPartPage partMfgDescription(){
+
 		String MFGAttribute=reader.getCellData("WTPart", "MfgClassAttribute", 2);
 		mfgDescription.sendKeys(MFGAttribute);
+
+		return this;
 	}
-	
-	public void clickNextButton(){
+
+	public WCNewWtPartPage clickNextButton(){
 		nextButton.click();
+		return this;
 	}
 
 	public WCFoldersPage clickFinishButton() throws IOException{
@@ -99,16 +104,11 @@ public class WCNewWtPartPage extends WCNewWtPartPageObjects{
 		util =new Utilities();
 		util.SwitchToChild();
 
-		selectAllPartDropDowns();
-		enterAllPartAttibutes();
-		clickNextButton();
-		partMfgDescription();
-		clickFinishButton();	
-
+		populateAllWTPartAttribute().clickNextButton().partMfgDescription().clickFinishButton();
 		util.SwitchToParent();
 		FolderPage.ClickOnYellowBanner();
 
-		util.capturescreenshot(driver, "CreatedPart");
+		util.capturescreenshot(driver, partname);
 
 	}
 
